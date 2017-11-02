@@ -23,6 +23,10 @@ Route::group(['as' => 'learn.', 'middleware' => 'auth', 'prefix' => 'chux'], fun
     
 });
 
+Route::view('dashboard', 'dashboard');
+
+Route::view('index', 'index');
+
 Route::get('model/{user}', function ($user) {
     return $user->name;
 });
