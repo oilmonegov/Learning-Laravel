@@ -45,3 +45,7 @@ Route::get('to/{params?}', 'HomeController@goto');
 Route::get('users/{id}', function ($id) {
     
 });
+
+Route::get('users/pages/', function () {
+    return redirect()->back();
+});
